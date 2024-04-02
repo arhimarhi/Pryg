@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         test1();
@@ -23,7 +25,23 @@ public class Main {
             }
         }
     }
+    public static Frog askCoordinatesTonguelength() {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("введите координату x, координату y и длину языка z");
+        int x = scanner.nextInt();
+        int y = scanner.nextInt();
+        int z = scanner.nextInt();
+        Frog Frog = new Frog(x, y, z);
+        return Frog;
+
+    }
+
 }
+
+
+
+
 
 class Point{
     int x,y;
